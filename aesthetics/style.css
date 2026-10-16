@@ -1,0 +1,79 @@
+
+h1{ 
+  text-align:center; 
+  display: inline-block;
+} /*end_h1*/
+
+
+body {
+  background-color: black;
+  color: white;
+  user-select: none; /* disable text selection */
+} /*end_body;*/
+
+
+/*_for footer only_*/  
+/* footer overlay - see {h3} also*/
+footer {/*start___footer___start*/
+  display: block;
+  font-size: 100%;
+  color: #E3D0F1;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  padding: 20px 20px 10px 20px ;/*top,right,bottom,left(nwse)*/
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+} /*end_footer;*/ 
+
+footer:hover{
+transform: translateY(1px);
+color: #7f00ff;
+} /*end_footer:hoover;*/
+
+footer:active{
+font-weight: 500;
+text-shadow: #180539;
+transform: translateY(4px)
+} /*end_footer:active;*/
+
+
+/*_navigation overlay_*/
+.overlay { 
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #092834;
+  opacity: 0.9;
+  overflow-y: hidden;
+  transition: 0.4s;
+}/*end overlay;*/
+
+.overlay-content { 
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}/*end overlay-content;*/
+
+.overlay a { /*start___overlay-link___start*/
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}/*end overlay-link;*/
+
+.overlay a:hover, .overlay a:focus { /*start___overlay-hover___start*/
+  color: #9BA17B;
+}/*end_overlay-hover;*/
+
+.overlay .closebtn { /*start___overlay-close___start*/
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}/*end_overlay-close;*/
