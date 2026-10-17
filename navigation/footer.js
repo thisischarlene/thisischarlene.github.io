@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Load the inclHTML.js script dynamically
   var inclHTMLScript = document.createElement('script');
-  inclHTMLScript.src = 'inclHTML.js';
+  inclHTMLScript.src = '/navigation/inclHTML.js';
   document.body.appendChild(inclHTMLScript);
 
   // Once the inclHTML.js script is loaded, execute the inclHTML() function
